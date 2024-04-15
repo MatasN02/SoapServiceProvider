@@ -1,0 +1,19 @@
+//
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by FernFlower decompiler)
+//
+
+package lt.eif.viko.m.nar.producingwebservice;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class OrderSoapServiceApplication {
+    public OrderSoapServiceApplication() {
+    }
+
+    public static void main(String[] args) {
+        SpringApplication.run(OrderSoapServiceApplication.class, args);
+    }
+}
