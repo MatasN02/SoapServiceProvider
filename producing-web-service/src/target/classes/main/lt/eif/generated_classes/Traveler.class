@@ -1,0 +1,48 @@
+//
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by FernFlower decompiler)
+//
+
+package lt.eif.viko.m.nar.producingwebservice.generated_classes;
+
+import jakarta.xml.bind.annotation.XmlAccessType;
+import jakarta.xml.bind.annotation.XmlAccessorType;
+import jakarta.xml.bind.annotation.XmlType;
+
+@XmlAccessorType(XmlAccessType.FIELD)
+@XmlType(
+    name = "traveler",
+    propOrder = {"id", "firstName", "lastName"}
+)
+public class Traveler {
+    protected int id;
+    protected String firstName;
+    protected String lastName;
+
+    public Traveler() {
+    }
+
+    public int getId() {
+        return this.id;
+    }
+
+    public void setId(int value) {
+        this.id = value;
+    }
+
+    public String getFirstName() {
+        return this.firstName;
+    }
+
+    public void setFirstName(String value) {
+        this.firstName = value;
+    }
+
+    public String getLastName() {
+        return this.lastName;
+    }
+
+    public void setLastName(String value) {
+        this.lastName = value;
+    }
+}
