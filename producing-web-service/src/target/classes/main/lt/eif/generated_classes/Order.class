@@ -1,0 +1,74 @@
+//
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by FernFlower decompiler)
+//
+
+package lt.eif.viko.m.nar.producingwebservice.generated_classes;
+
+import jakarta.xml.bind.annotation.XmlAccessType;
+import jakarta.xml.bind.annotation.XmlAccessorType;
+import jakarta.xml.bind.annotation.XmlElement;
+import jakarta.xml.bind.annotation.XmlType;
+import java.util.ArrayList;
+import java.util.List;
+
+@XmlAccessorType(XmlAccessType.FIELD)
+@XmlType(
+    name = "order",
+    propOrder = {"id", "orderDate", "travelers", "trips"}
+)
+public class Order {
+    protected int id;
+    protected String orderDate;
+    @XmlElement(
+        nillable = true
+    )
+    protected List<Traveler> travelers;
+    @XmlElement(
+        nillable = true
+    )
+    protected List<Trip> trips;
+
+    public Order() {
+    }
+
+    public int getId() {
+        return this.id;
+    }
+
+    public void setId(int value) {
+        this.id = value;
+    }
+
+    public String getOrderDate() {
+        return this.orderDate;
+    }
+
+    public void setOrderDate(String value) {
+        this.orderDate = value;
+    }
+
+    public List<Traveler> getTravelers() {
+        if (this.travelers == null) {
+            this.travelers = new ArrayList();
+        }
+
+        return this.travelers;
+    }
+
+    public void setTravelers(List<Traveler> travelers) {
+        this.travelers = travelers;
+    }
+
+    public List<Trip> getTrips() {
+        if (this.trips == null) {
+            this.trips = new ArrayList();
+        }
+
+        return this.trips;
+    }
+
+    public void setTrips(List<Trip> trips) {
+        this.trips = trips;
+    }
+}
