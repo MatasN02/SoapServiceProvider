@@ -1,0 +1,13 @@
+//
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by FernFlower decompiler)
+//
+
+@XmlSchema(
+    namespace = "http://www.springframework.org/schema/web-services",
+    elementFormDefault = XmlNsForm.QUALIFIED
+)
+package lt.eif.viko.m.nar.producingwebservice.generated_classes;
+
+import jakarta.xml.bind.annotation.XmlNsForm;
+import jakarta.xml.bind.annotation.XmlSchema;
