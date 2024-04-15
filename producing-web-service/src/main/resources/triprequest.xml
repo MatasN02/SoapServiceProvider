@@ -1,0 +1,7 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:us="http://www.springframework.org/schema/web-services">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <us:getAllTripRequest/>
+    </soapenv:Body>
+</soapenv:Envelope>
