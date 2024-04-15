@@ -1,0 +1,60 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:tns="http://www.springframework.org/schema/web-services"
+           targetNamespace="http://www.springframework.org/schema/web-services" elementFormDefault="qualified">
+
+  <xs:element name="getOrderRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="id" type="xs:int"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="getOrderResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="order" type="tns:order" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="getAllTripRequest">
+    <xs:complexType/>
+  </xs:element>
+
+  <xs:element name="getAllTripResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" name="allTrips" type="tns:Trip"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="order">
+    <xs:sequence>
+      <xs:element name="id" type="xs:int"/>
+      <xs:element name="orderDate" type="xs:string" minOccurs="0"/>
+      <xs:element name="travelers" type="tns:traveler" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="trips" type="tns:Trip" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="traveler">
+    <xs:sequence>
+      <xs:element name="id" type="xs:int"/>
+      <xs:element name="firstName" type="xs:string" minOccurs="0"/>
+      <xs:element name="lastName" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="Trip">
+    <xs:sequence>
+      <xs:element name="id" type="xs:int"/>
+      <xs:element name="organizationName" type="xs:string"/>
+      <xs:element name="name" type="xs:string"/>
+      <xs:element name="location" type="xs:string"/>
+      <xs:element name="tripDuration" type="xs:string"/>
+      <xs:element name="cost" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
